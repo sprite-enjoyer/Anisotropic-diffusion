@@ -136,7 +136,7 @@ def generate_noisy_images(source_path, save_path, salt_min=0.01, salt_max=0.3, p
     curr_peppers = []
     curr_noisy_images = []
 
-    for _ in range(3):
+    for _ in range(5):
       salt = round(random.uniform(salt_min, salt_max), 2)
       pepper = round(random.uniform(pepper_min, pepper_max), 2)
       noisy_image = add_spn(curr_image, salt, pepper)
